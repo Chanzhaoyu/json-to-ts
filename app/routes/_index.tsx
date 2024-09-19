@@ -47,13 +47,13 @@ export default function Index() {
 
   return (
     <section className="min-h-screen max-w-screen-xl flex m-auto">
-      <div className="w-full m-auto">
-        <header className="text-center space-y-4 mb-10">
+      <div className="w-full flex flex-col space-y-10">
+        <header className="text-center py-10">
           <h1 className="text-4xl font-bold">JSON to TS</h1>
-          <p>Convert json object to typescript interfaces</p>
+          <p className="mt-4">Convert json object to typescript interfaces</p>
         </header>
-        <main className="mt-4 space-y-4">
-          <div className="flex space-x-4 items-stretch h-200">
+        <main className="space-y-4 flex-1">
+          <div className="flex space-x-4 items-stretch h-full">
             <div className="flex-1 space-x-4">
               <Textarea
                 minRows={20}
@@ -86,6 +86,16 @@ export default function Index() {
             </div>
           </div>
         </main>
+        <header className="text-center p-4">
+          <a
+            href="https://github.com/Chanzhaoyu/json-to-ts"
+            className="hover:text-blue-500"
+            target="_blank"
+            rel="noreferrer"
+          >
+            GitHub
+          </a>
+        </header>
       </div>
     </section>
   );
