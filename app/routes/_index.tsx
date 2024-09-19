@@ -3,6 +3,7 @@ import { Button } from "@nextui-org/button";
 import { Textarea } from "@nextui-org/input";
 import json2ts from "json-to-ts";
 import { useState } from "react";
+import GitHub from "../components/GitHub";
 import toast from "react-hot-toast";
 
 export const meta: MetaFunction = () => {
@@ -89,11 +90,12 @@ export default function Index() {
         <header className="text-center p-4">
           <a
             href="https://github.com/Chanzhaoyu/json-to-ts"
-            className="hover:text-blue-500"
+            className="hover:text-blue-500 text-zinc-600 w-8 h-8 inline-block"
             target="_blank"
+            title="GitHub"
             rel="noreferrer"
           >
-            GitHub
+            <GitHub />
           </a>
         </header>
       </div>
